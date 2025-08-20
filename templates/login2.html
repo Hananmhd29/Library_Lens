@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Library Lens</title>
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <style>
+        *{
+	margin: 0;
+	padding: 0;
+
+}
+.full-page {
+	height: 100%;
+	width: 100%;
+	background-image: url("static/img/bg.png");
+
+	background-position: center;
+	background-size: 100%;
+	position: absolute;
+}
+.navbar
+{
+	display: flex;
+	align-items: center;
+	padding: 20px;
+	padding-left: 50px;
+	padding-right: 30px;
+	padding-top:10px;
+	padding-bottom: 2px;
+}
+
+nav
+{
+	flex: 1;
+	text-align: right;
+}
+nav ul
+{
+	display: inline-block;
+	list-style: none;
+}
+nav ul li
+{
+	display: inline-block;
+	list-style: 70px;
+}
+nav ul li a
+{
+	text-decoration: none;
+	font-size: 20px;
+	color: white;
+	font-family: sans-serif;
+}
+nav ul li button
+{
+	font-size: 20px;
+	color: white;
+	outline: none;
+	border: none;
+	background: transparent;
+	cursor: pointer;
+	font-family: sans-serif;
+}
+nav ul li button:hover
+{
+	color: aqua;
+}
+nav ul li a:hover
+{
+	color: aqua;
+}
+a {
+	text-decoration: none;
+    float: right;
+	color: #D3D3D3;
+	font-size: 20px;
+}
+a:hover
+{
+	color: aqua;
+}
+.form-box
+{
+	width: 380px;
+	height: 440px;
+	position: relative;
+	margin: 4% auto;
+	background: rgba(0,0,0,0,3);
+	padding: 10px;
+	overflow: hidden;
+}
+.button-box
+{
+	width: 220px;
+	margin: 35px auto;
+	position: relative;
+	box-shadow: 0 0 20px 9px #ff61241f;
+	border-radius: 30px;
+}
+.toggle-btn
+{
+	padding: 10px 30px;
+	cursor: pointer;
+	background: transparent;
+	border: 0;
+	outline: none;
+	position: relative;
+	color: white;
+	font-size: 14px;
+}
+#btn
+{
+	top: 0;
+	left: 0;
+	position: absolute;
+	width: 110px;
+	height: 100%;
+	background: linear-gradient(to right, #ff105f,#ffad06);
+	border-radius: 30px;
+	transition: .5s;
+}
+.input-group
+{
+	top: 100px;
+	position: absolute;
+	width: 280px;
+	transition: .5s;
+}
+.input-field
+{
+	width: 100%;
+	padding: 10px 0;
+	margin: 5px 0;
+	border-left: 0;
+	border-top: 0;
+	border-right: 0;
+	border-bottom: 1px solid white;
+	outline: none;
+	background: transparent;
+	color: white;
+	font-size: 15px;
+	font-weight: bold;
+}
+::-webkit-input-placeholder
+{
+	color: white;
+	font-weight: bold;
+	font-size: 15px;
+}
+.submit-btn
+{
+	width: 85%;
+	padding: 10px 30px;
+	cursor: pointer;
+	display: block;
+	margin: auto;
+	background: linear-gradient(to right, #ff105f,#ffad06);
+	border: 0;
+	outline: none;
+	border-radius: 30px;
+	color: white;
+	font-size: 15px;
+}
+
+span
+{
+	color: white;
+	font-size: 15px;
+	bottom: 68px;
+	position: absolute;
+}
+#login
+{
+	left: 50px;
+}
+#register
+{
+	left: 450px;
+}
+
+    </style>
+</head>
+
+<body>
+	<div class="full-page">
+
+			<div class="navbar">
+				 <a>
+        <img src="static/img/logo1.png" height="80" >
+    </a>
+					<nav>
+
+
+<div class="topnav">
+
+  <a class="active" href="/">Home    </a>
+
+	<a href="/hh">Register   </a>
+
+</div>
+                    </nav>
+			</div>
+			<div class="form-box">
+				<div class="button-box">
+					<div id="btn"></div>
+					<button type="button" onclick="login()" class="toggle-btn">Log In</button>
+				</div>
+
+				<form id="login" action="{{ url_for('login') }}" class="input-group" method="post">
+					<input id="library_id" type="text" name="libraryid" class="form-control" placeholder="Library Id" required>
+					<input id="password" name="password"  type="password" class="form-control" placeholder="Enter Password" required>
+					<br><br>
+
+					<button type="submit" class="btn btn-primary">Log in</button>
+				</form>
+
+				<form id="register" class="input-group">
+					<input type="text" class="input-field" placeholder="First Name" required>
+					<input type="text" class="input-field" placeholder="Last Name" required>
+					<input type="text" class="input-field" placeholder="Library Id" required>
+					<input type="password" class="input-field" placeholder="Enter Password" required>
+					<input type="password" class="input-field" placeholder="Confirm Password" required>
+
+					<br><br>
+					<button type="submit" class="submit-btn">Register</button>
+				</form>
+		</div>
+	</div>
+	<script>
+		var x=document.getElementById('login');
+		var y=document.getElementById('register');
+		var z=document.getElementById('btn');
+		function register()
+		{
+			x.style.left='-400px';
+			y.style.left='50px';
+			z.style.left='110px';
+		}
+		function login()
+		{
+			x.style.left='50px';
+			y.style.left='450px';
+			z.style.left='0px';
+		}
+	</script>
+</body>
+</html>

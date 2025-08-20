@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Library Lens</title>
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <style>
+        body{
+            background-image: url("../static/img/bg.png");
+			background-position: center;
+			background-size: auto;
+
+        }
+		.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #A4161A;
+  color: white;
+}
+
+        .row{
+            position: absolute;
+            left: 25%;
+        }
+
+		.login{
+
+			position: absolute;
+			align-content: center;
+			left: 100px;
+		}
+
+		.txt{
+			color: #D3D3D3;
+			font-family: "Times New Roman";
+		}
+
+
+        .box2{
+
+            font-family: "Times New Roman";
+    }
+
+    .v1{
+
+         border-left: 1px solid #ffffff;
+        height: 700px;
+        position: absolute;
+        left: 50%;
+        margin-left: -3px;
+        top: 70px;
+        }
+
+
+
+    </style>
+</head>
+
+<body>
+
+<nav>
+
+
+<div class="topnav">
+    <div>
+
+        <a class="text-white" href="/">Library Lens</a>
+    </div>
+  <a class="active" href="/">Home</a>
+  <a href="/recommend">Recommend</a>
+  <a href="/all_book">All Books</a>
+  <a href="/login">Login</a>
+
+</div>
+</nav>
+   <div class="login">
+
+	   <u><h3 class="txt">Login</h3></u><br>
+
+		<form>
+			<label class="txt" for="id">Library ID:</label><br>
+					<input type="text" id="ino" name="ino"  required><br><br>
+			<label class="txt" for="Pass">Password:</label><br>
+					<input type="password" id="pass" name="pass" required><br><br>
+				<button class="btn" type="submit" name="save" style="vertical-align:middle"><span>Login </span></button><br><br><br><br>
+
+
+		</form>
+	</div>
+
+<div class="v1">
+
+
+
+          <div class="container">
+               <div class="row">
+
+
+					<div class="box2">
+
+					<u><h3 class="txt">Create an Account</h3></u><br>
+					<div class="box3">
+					<form method="post">
+					<span style="color:red">*</span>
+					<label class="txt" for="fname">Full name:</label><br>
+					<input type="text" id="fname" name="fname" required><br><br>
+
+						<span style="color:red">*</span>
+					<label class="txt" for="id">Library ID:</label><br>
+					<input type="text" id="ino" name="ino"  required><br><br>
+
+					<span style="color:red">*</span>
+					<label class="txt"  for="EMail">E-Mail:</label><br>
+					<input type="email" id="email" name="email" required><br><br>
+
+					<span style="color:red">*</span>
+					<label class="txt"  for="Pass">Password:</label><br>
+					<input type="password" id="pass" name="pass" required><br><br>
+
+					<span style="color:red">*</span>
+					<label class="txt" for="Cpass">Conform Password:</label><br>
+					<input type="password" id="cpass" name="cpass" required><br>
+					<Small class="txt"> (Use 6 or more characters with a mix of letters, numbers & symbols)</small><br><br>
+
+
+					<div class="box4">
+
+
+
+					<button class="btn" type="submit" name="save" style="vertical-align:middle"><span>Sign Up </span></button><br><br><br><br>
+					</div>
+
+					</form>
+					</div>
+
+
+          </div>
+
+    </div>
+</div>
+
+
+</body>
+</html>

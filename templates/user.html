@@ -1,0 +1,18 @@
+<nav>
+
+
+<div class="topnav">
+    <a>
+        <img src="static/img/logo1.png" height="80" >
+    </a>
+
+  <a class="active" href="/">Home</a>
+  <a href="/recommend">Recommend</a>
+  <a href="/all_book">All Books</a>
+  <a href="/login">Login</a>
+
+</div>
+</nav>
+<div class="log"  >
+    <span>Logged in as : <strong>{{session.name}} </span><a href="{{ url_for('logout') }}"> Logout</a>
+</div>
