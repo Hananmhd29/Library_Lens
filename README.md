@@ -15,7 +15,7 @@ Library Lens is a Python Flask web application that provides personalized book r
 - Pandas & scikit-learn
 - HTML/CSS/Bootstrap for front-end
 
-#Table of Contents
+## Table of Contents
 -Overview
 -Getting Started
     -Prerequisites
@@ -23,11 +23,11 @@ Library Lens is a Python Flask web application that provides personalized book r
     -Usage
     -Testing
 
-#Overview
+## Overview
 
 Library_Lens is a comprehensive developer toolkit designed to streamline the creation of intelligent library management systems. It integrates environment setup, NLP processing, database connectivity, and web interfaces to deliver a seamless development experience.
 
-#Why Library_Lens?
+## Why Library_Lens?
 
 This project simplifies building feature-rich, personalized library applications. The core features include:
 Dependency Management: Ensures consistent environments with requirements.txt, supporting core libraries like Flask, SQLAlchemy, and pandas.
@@ -37,15 +37,15 @@ User Authentication: Provides secure login, registration, and session management
 Web Interface: Offers a rich Ul for browsing, searching, and exploring the library collection.
 Database Integration: Facilitates robust data storage and retrieval with MySQL connectivity.
 
-#Getting Started
+## Getting Started
 
-#Prerequisites
+## Prerequisites
 
 This project requires the following dependencies:
 -Programming Language: HTML
 -Package Manager: Pip
 
-#Installation
+## Installation
 
 Build Library_Lens from the source and install dependencies:
 
@@ -59,14 +59,15 @@ Build Library_Lens from the source and install dependencies:
 Using pip:
 > pip install -r requirements.txt
 
-#Usage
+## Usage
 
 Run the project with:
 Using pip:
 python {entrypoint}
 
-#Testing
+## Testing
 
 Library_lens uses the {test_framework) test framework. Run the test suite with:
 Using pip:
 pytest
+
