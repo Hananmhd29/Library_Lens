@@ -16,12 +16,12 @@ Library Lens is a Python Flask web application that provides personalized book r
 - HTML/CSS/Bootstrap for front-end
 
 ## Table of Contents
--Overview
--Getting Started
-    -Prerequisites
-    -Installation
-    -Usage
-    -Testing
+- Overview
+- Getting Started
+    - Prerequisites
+    - Installation
+    - Usage
+    - Testing
 
 ## Overview
 
@@ -42,32 +42,33 @@ Database Integration: Facilitates robust data storage and retrieval with MySQL c
 ## Prerequisites
 
 This project requires the following dependencies:
--Programming Language: HTML
--Package Manager: Pip
+- Programming Language: HTML
+- Package Manager: Pip
 
 ## Installation
 
 Build Library_Lens from the source and install dependencies:
 
 1. Clone the repository:
-> git clone https://github.com/Hananmhd29/Library_Lens
+- git clone https://github.com/Hananmhd29/Library_Lens
 
 2. Navigate to the project directory:
-> cd Library_Lens
+- cd Library_Lens
 
 3. Install the dependencies:
 Using pip:
-> pip install -r requirements.txt
+- pip install -r requirements.txt
 
 ## Usage
 
 Run the project with:
 Using pip:
-python {entrypoint}
+- python {entrypoint}
 
 ## Testing
 
 Library_lens uses the {test_framework) test framework. Run the test suite with:
 Using pip:
-pytest
+- pytest
+
 
